@@ -24,7 +24,7 @@ fi
 # copy other dot files 
 cp  $HOME/{.zshrc,.vimrc} .
 
-cp -r $HOME/.config/{i3,polybar} .
+cp -r $HOME/.config/{i3,polybar,kitty} .
 
 
 
