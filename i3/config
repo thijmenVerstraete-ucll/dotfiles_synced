@@ -254,3 +254,5 @@ exec spotify-launcher
 exec_always feh --bg-scale ~/Pictures/wallpapers/nature.png
 exec_always ~/.config/polybar/launch.sh --colorblocks
 exec_always picom
+exec --no-startup-id xset m 1 4
+exec_always python -m pywal -i ~/Pictures/wallpapers/nature.png
