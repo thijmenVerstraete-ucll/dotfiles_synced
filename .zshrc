@@ -30,4 +30,4 @@ PROMPT='%n@%m %~ %# '
 
 # Enable syntax highlighting (if the plugin is installed)
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-python -m pywal -i ~/Pictures/wallpapers/nature.png -q
+python -m pywal -i ~/Pictures/wallpapers/light_mountains.jpg -q

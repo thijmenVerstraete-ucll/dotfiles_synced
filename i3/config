@@ -40,8 +40,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec brightnessctl set 25+# Increase brightness by 10%
-bindsym XF86MonBrightnessDown exec brightnessctl set 25- # Decrease brightness by 10%
+bindsym XF86MonBrightnessUp exec brightnessctl set 20+# Increase brightness by 10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 20- # Decrease brightness by 10%
 
 # Detect HDMI connection and switch to extended display
 exec_always --no-startup-id \
@@ -185,6 +185,7 @@ bindsym Mod1+Shift+0 move container to workspace number $ws10
 
 # Use xprop to get name of program
 for_window [class="Spotify"] move to workspace $ws8
+#for_window [class="KeePassXC"] move to workspace $ws9
 
 gaps inner 7
 
@@ -251,8 +252,10 @@ bindsym Mod1+less move to output left
 
 
 exec spotify-launcher
-exec_always feh --bg-scale ~/Pictures/wallpapers/nature.png
+#exec keepassxc
+exec_always feh --bg-scale ~/Pictures/wallpapers/light_mountains.jpg
+#exec_always python -m pywal -i ~/Pictures/wallpapers/light_mountains.jpg
 exec_always ~/.config/polybar/launch.sh --colorblocks
 exec_always picom
 exec --no-startup-id xset m 1 4
-exec_always python -m pywal -i ~/Pictures/wallpapers/nature.png
+exec_always xinput set-prop SynPS/2 Synaptics TouchPad libinput Natural Scrolling Enabled 1
