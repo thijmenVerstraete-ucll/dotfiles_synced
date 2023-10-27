@@ -79,6 +79,7 @@ bindsym Mod1+Shift+q kill
 # start dmenu (a program launcher)
 # bindsym Mod1+d exec --no-startup-id rofi -show combi &
 bindsym Mod1+d exec --no-startup-id ~/.config/polybar/material/scripts/launcher.sh &
+bindsym Mod1+c exec rofi -show calc
 # A more modern dmenu replacement is rofi:
 # bindsym Mod1+d exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -253,9 +254,13 @@ bindsym Mod1+less move to output left
 
 exec spotify-launcher
 #exec keepassxc
-exec_always feh --bg-scale ~/Pictures/wallpapers/light_mountains.jpg
-#exec_always python -m pywal -i ~/Pictures/wallpapers/light_mountains.jpg
+exec_always feh --bg-scale ~/Pictures/wallpapers/dark_mountains.jpg
+#exec_always python -m pywal -i ~/Pictures/wallpapers/dark_mountains.jpg
+
+#   Polybar
 exec_always ~/.config/polybar/launch.sh --colorblocks
+bindsym Mod1+m exec --no-startup-id polybar-msg cmd toggl
+
 exec_always picom
 exec --no-startup-id xset m 1 4
 exec_always xinput set-prop SynPS/2 Synaptics TouchPad libinput Natural Scrolling Enabled 1

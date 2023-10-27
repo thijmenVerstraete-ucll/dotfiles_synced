@@ -8,7 +8,7 @@ ZSH_THEME="awesomepanda"
 source $ZSH/oh-my-zsh.sh
 
 # Add any custom plugins you want to use (e.g., git, syntax-highlighting)
-plugins=(git syntax-highlighting)
+#plugins=(git syntax-highlighting)
 
 # Customize other settings
 alias ll="ls -alF"
@@ -30,4 +30,9 @@ PROMPT='%n@%m %~ %# '
 
 # Enable syntax highlighting (if the plugin is installed)
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-python -m pywal -i ~/Pictures/wallpapers/light_mountains.jpg -q
+#python -m pywal -i ~/Pictures/wallpapers/light_mountains.jpg -q
+python -m pywal --theme ashes -q
+
+alias school="cd /home/thijmen/Documents/school/sem3"
+
+TERM='xterm-256color'
