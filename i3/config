@@ -251,6 +251,9 @@ bindsym Mod1+Shift+greater move to output right
 # Move focused window to the left
 bindsym Mod1+less move to output left
 
+# move focused workspace between monitors
+bindsym Mod1+Ctrl+r move workspace to output HDMI-A-0
+bindsym Mod1+Ctrl+l move workspace to output eDP 
 
 exec spotify-launcher
 #exec keepassxc
