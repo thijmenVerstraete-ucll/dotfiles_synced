@@ -243,7 +243,7 @@ bar {
 #######################################################################
 exec i3-config-wizard
 
-bindsym Mod1+shift+x exec i3lock
+bindsym Mod1+shift+x exec i3lock -i ~/Pictures/wallpapers/nature.png
 
 # Move focused window to the right
 bindsym Mod1+Shift+greater move to output right
