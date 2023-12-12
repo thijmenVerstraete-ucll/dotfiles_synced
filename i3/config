@@ -257,7 +257,7 @@ bindsym Mod1+Ctrl+l move workspace to output eDP
 
 exec spotify-launcher
 #exec keepassxc
-exec_always feh --bg-scale ~/Pictures/wallpapers/dark_mountains.jpg
+exec_always feh --bg-scale ~/Pictures/wallpapers/cabin.jpg
 #exec_always python -m pywal -i ~/Pictures/wallpapers/dark_mountains.jpg
 
 #   Polybar
@@ -267,3 +267,5 @@ bindsym Mod1+m exec --no-startup-id polybar-msg cmd toggl
 exec_always picom
 exec --no-startup-id xset m 1 4
 exec_always xinput set-prop SynPS/2 Synaptics TouchPad libinput Natural Scrolling Enabled 1
+exec ~/.config/polybar/material/scripts/pywal.sh ~/Pictures/wallpapers/cabin.jpg
+exec source ~/.zshrc

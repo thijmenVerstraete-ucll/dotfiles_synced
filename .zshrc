@@ -1,5 +1,6 @@
 # Path to your Oh My Zsh installation
 export ZSH="/usr/share/oh-my-zsh"
+export VISUAL=vim
 
 # Set the Zsh theme (you can change this to any available theme)
 ZSH_THEME="awesomepanda"
@@ -21,7 +22,7 @@ alias c="clear"
 #source $ZSH/custom/plugins/plugin-name/plugin-name.plugin.zsh
 
 # If you want to set environment variables, you can do it here
-export PATH="$PATH:/path/to/your/custom/bin"
+#export PATH="$PATH:/path/to/your/custom/bin"
 
 # If you want to load additional scripts or configurations, you can do it here
 
