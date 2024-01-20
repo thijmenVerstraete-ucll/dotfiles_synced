@@ -32,8 +32,9 @@ PROMPT='%n@%m %~ %# '
 # Enable syntax highlighting (if the plugin is installed)
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #python -m pywal -i ~/Pictures/wallpapers/light_mountains.jpg -q
-python -m pywal --theme ashes -q
+python -m pywal --theme ashes -q -e
 
 alias school="cd /home/thijmen/Documents/school/sem3"
+alias xc="xclip -selection clipboard"
 
 TERM='xterm-256color'
