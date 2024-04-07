@@ -34,7 +34,10 @@ source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #python -m pywal -i ~/Pictures/wallpapers/light_mountains.jpg -q
 python -m pywal --theme ashes -q -e
 
-alias school="cd /home/thijmen/Documents/school/sem3"
+alias school="cd /home/thijmen/Documents/school/sem4"
 alias xc="xclip -selection clipboard"
+alias addW="./home/thijmen/Documents/français"
+alias pga="bash .config/scripts/pgadmin"
 
 TERM='xterm-256color'
+eval "$(zoxide init zsh)"
