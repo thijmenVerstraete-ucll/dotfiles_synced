@@ -116,8 +116,7 @@ bindsym Mod1+Shift+Up move up
 bindsym Mod1+Shift+Right move right
 
 # Screen shot
-#bindsym Print exec gnome-screenshot -i
-bindsym Print exec flameshot gui
+bindsym Print exec "flameshot && flameshot gui"
 
 # split in horizontal orientation
 bindsym Mod1+g split h
@@ -262,18 +261,19 @@ bindsym Mod1+Ctrl+l move workspace to output eDP
 
 exec spotify-launcher
 #exec keepassxc
-exec_always feh --bg-scale ~/Pictures/wallpapers/bee_blue.jpg
-#exec_always python -m pywal -i ~/Pictures/wallpapers/dark_mountains.jpg
+exec_always feh --bg-scale ~/Pictures/wallpapers/tux-1713300539654-5234.jpg
 
 #   Polybar
-exec_always ~/.config/polybar/launch.sh --cuts
-bindsym Mod1+m exec --no-startup-id polybar-msg cmd toggl
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 exec_always --no-startup-id pgrep -x redshift || redshift
 exec_always picom
 exec --no-startup-id xset m 1 4
 exec_always xinput set-prop SynPS/2 Synaptics TouchPad libinput Natural Scrolling Enabled 1
-#exec ~/.config/polybar/material/scripts/pywal.sh ~/Pictures/wallpapers/sunset_mountains.jpg
 exec source ~/.zshrc
+exec "setxkbmap -layout be"
+exec_always dunst
 
 # Sensitivity:
 #xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.8
+
